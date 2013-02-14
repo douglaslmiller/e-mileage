@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/name"
+                        android:layout_weight="1"
+                        style="@style/NormalText.Large"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:inputType="textPersonName"
+                        android:layout_weight="1"
+                        style="@style/LargeFont">
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/password"
+                        android:id="@+id/textView"
+                        style="@style/NormalText.Large"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="New EditText"
+                        android:id="@+id/editPassword"
+                        android:layout_weight="1"
+                        style="@style/LargeFont"
+                        android:inputType="textPassword"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/saveUser"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/save"
+                        android:onClick="saveUserClick"
+                        android:layout_weight=".33"
+                        android:background="@drawable/button"/>
+
+                    <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/cancel"
+                            android:onClick="cancelSaveClick"
+                            android:layout_weight=".33"
+                            android:background="@drawable/button"/>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>

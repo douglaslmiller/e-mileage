@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/StartTime"
+                android:id="@+id/lblStartTime"
+                android:layout_column="0"
+                android:singleLine="true"
+                style="@style/NormalText.Large"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/StartLocation"
+                android:id="@+id/lblstartlocation"
+                android:layout_column="1"
+                android:singleLine="false"
+                style="@style/NormalText.Large"
+                android:layout_weight=".5"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/startTime"
+                android:layout_column="0"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/startLocation"
+                android:layout_column="1"
+                android:layout_weight=".5"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:id="@+id/lblEndTime"
+                android:layout_column="0"
+                android:layout_weight=".5"
+                style="@style/NormalText.Large"
+                android:editable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Location"
+                android:id="@+id/lblEndLocation"
+                android:layout_column="1"
+                style="@style/NormalText.Large"
+                android:layout_weight=".5"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/endLocation"
+                android:layout_column="1"
+                android:layout_weight=".5"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time"
+                android:id="@+id/lbltextView"
+                android:layout_column="0"
+                style="@style/NormalText.Large"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Distance"
+                android:id="@+id/lbldistance"
+                android:layout_column="1"
+                style="@style/NormalText.Large"
+                android:layout_weight=".5"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/totalTime"
+                android:layout_column="0"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/totalDistance"
+                android:layout_column="1"
+                android:layout_weight=".5"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startstop"
+                android:layout_column="0"
+                android:background="@drawable/button"
+                android:layout_weight=".33"
+                android:textOff="Start"
+                android:textOn="Stop"
+                style="@style/ButtonText"/>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:id="@+id/Pause"
+                android:layout_column="1"
+                android:background="@drawable/button"
+                android:layout_weight=".33"
+                android:textOff="Pause"
+                android:textOn="Unpause"
+                style="@style/ButtonText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sync"
+                android:id="@+id/sync"
+                android:layout_column="2"
+                android:background="@drawable/button"
+                android:layout_weight=".33"
+                style="@style/ButtonText"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
